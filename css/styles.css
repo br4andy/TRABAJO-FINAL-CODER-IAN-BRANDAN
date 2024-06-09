@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar-nav {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/banner\ coffee.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 90%;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-shadow: #a86e50 5px 0px;
+    text-decoration: overline 10px;
+    font-weight: bold;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #a86e50;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-1:hover {
+    color: #431905;
+}
+
+/* Servicios */
+.img {
+    background-image: url(../images/fondo\ nav.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.titulocarta {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.menucafe {
+    display: block;
+    margin: 50px auto;
+    width: 90%;
+    border: 5px solid #431905;
+    border-radius: 20px;
+}
+
+.especialidades {
+    margin-top: 200px;
+}
+
+.titulo-especialidades {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.esp1, .esp2, .esp3 {
+    width: 50%;
+    margin: 20px auto;
+    border: 4px solid black;
+    border-radius: 3%;
+}
+
+.esp1content, .carajillo, .cafebombon {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.esp1content p, .carajillo p, .cafebombon p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 10px 10px;
+}
+
+.panaderiah1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.menupana {
+    display: block;
+    margin: 50px auto;
+    width: 90%;
+    border: 2px solid #431905;
+    border-radius: 20px;
+}
+
+.bodycolor {
+    background-image: url(/images/fondo\ beige.jpg);
+}
+
+.maincontent {
+    background-image: url(../images/Tu\ Historia\ Horarios\ De\ Atención\ Fotográfico\ Blanco\ y\ Negro\ .svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+}
+
+.maincontent h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.ubics {
+    padding: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ubics p {
+    font-size: 25px;
+    color: white;
+    padding: 20px 20px;
+}
+
+/* Ajustes Responsive */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-content h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .btn-1 {
+        padding: 10px 30px;
+    }
+
+    .esp1, .esp2, .esp3 {
+        width: 100%;
+    }
+
+    .esp1content p, .carajillo p, .cafebombon p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .btn-1 {
+        padding: 8px 25px;
+    }
+
+    .ubics p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-content h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .btn-1 {
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+
+    .esp1content, .carajillo, .cafebombon {
+        padding: 20px;
+    }
+
+    .esp1content p, .carajillo p, .cafebombon p {
+        font-size: 18px;
+    }
+
+    .maincontent h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .ubics p {
+        font-size: 18px;
+    }
+}
